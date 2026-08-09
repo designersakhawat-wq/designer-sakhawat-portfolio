@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "eyebrow": "Performance Ad Creative Specialist",
+    "headline": "Helping Brands Scale with High Converting Ad Creatives.",
+    "subheading": "Performance focused creatives for eCommerce, EdTech, SaaS & Service Brands.",
+    "cta_primary": "View My Work",
+    "cta_secondary": "Let's Talk",
+    "image1": "/uploads/1786267230780-828863538.jpg",
+    "image1Fit": "cover",
+    "image2": "/uploads/1786267233959-209569475.jpg",
+    "image2Fit": "contain",
+    "image3": "/uploads/1786267244287-281317777.jpg",
+    "image3Fit": "cover"
+  },
+  "contact": {
+    "email": "your.email@example.com",
+    "phone": "",
+    "whatsapp": "",
+    "location": "Remote / Global",
+    "availability": "Open to New Projects"
+  },
+  "social": {
+    "linkedin": "",
+    "instagram": "",
+    "behance": "",
+    "dribbble": ""
+  },
+  "seo": {
+    "title": "Md. Sakhawat Hossain | Performance Ad Creative Specialist",
+    "description": "High converting ad creatives for eCommerce, EdTech, SaaS & Service Brands."
+  }
+}
