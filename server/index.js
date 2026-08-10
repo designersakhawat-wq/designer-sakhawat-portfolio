@@ -4,7 +4,7 @@ const path = require('path');
 const fs = require('fs');
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 // Middleware
 app.use(cors({ origin: 'http://localhost:5173', credentials: true }));
@@ -41,7 +41,7 @@ app.get('*', (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 3001;
+
 
 app.listen(PORT, () => {
   console.log(`\n  🚀 Server running at http://localhost:${PORT}`);
