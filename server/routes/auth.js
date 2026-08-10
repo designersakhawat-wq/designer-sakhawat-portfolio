@@ -3,8 +3,8 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 const SECRET = 'sakhawat_portfolio_secret_2024';
-// Password: admin123 (bcrypt hash)
-const PASSWORD_HASH = bcrypt.hashSync('admin123', 10);
+// Password: admin19671 (bcrypt hash)
+const PASSWORD_HASH = bcrypt.hashSync('admin19671', 10);
 
 router.post('/login', async (req, res) => {
   const { password } = req.body;
