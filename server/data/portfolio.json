@@ -100,7 +100,7 @@
       "badge": "Concept Project",
       "shortDescription": "High-urgency promotional creatives for Q4 peak season.",
       "thumbnailBg": "bg-[#171717]",
-      "imageUrl": "",
+      "imageUrl": "/uploads/1786292225779-392901494.jpg",
       "caseStudy": {
         "challenge": "Cutting through the noise during the most competitive advertising season — Black Friday / Cyber Monday.",
         "objective": "Maximize ROAS during a 4-day flash sale period.",
@@ -113,7 +113,10 @@
         ],
         "creativeVariations": "Tested dark mode vs. light mode aesthetics for same offer.",
         "outcome": "A striking promotional package designed for maximum click-through rates."
-      }
+      },
+      "thumbnailFit": "cover",
+      "bannerUrl": "",
+      "bannerFit": "cover"
     },
     {
       "id": 6,
