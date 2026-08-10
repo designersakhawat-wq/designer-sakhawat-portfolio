@@ -32,7 +32,7 @@ app.use('/api/testimonials', require('./routes/testimonials'));
 app.get('/api/health', (req, res) => res.json({ status: 'ok', time: new Date() }));
 
 // Fallback to index.html for SPA routing (React Router)
-app.get('/*', (req, res) => {
+app.get('/{*splat}', (req, res) => {
   const indexPath = path.join(__dirname, '../dist/index.html');
   if (fs.existsSync(indexPath)) {
     res.sendFile(indexPath);
