@@ -11,6 +11,9 @@ app.use(cors({ origin: 'http://localhost:5173', credentials: true }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Serve static files from the React frontend build
+app.use(express.static(path.join(__dirname, '../dist')));
+
 // Serve uploaded images statically
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
@@ -28,7 +31,18 @@ app.use('/api/testimonials', require('./routes/testimonials'));
 // Health check
 app.get('/api/health', (req, res) => res.json({ status: 'ok', time: new Date() }));
 
+// Fallback to index.html for SPA routing (React Router)
+app.get('*', (req, res) => {
+  const indexPath = path.join(__dirname, '../dist/index.html');
+  if (fs.existsSync(indexPath)) {
+    res.sendFile(indexPath);
+  } else {
+    res.status(404).send('Frontend not built. Please run "npm run build" first.');
+  }
+});
+
+const PORT = process.env.PORT || 3001;
+
 app.listen(PORT, () => {
-  console.log(`\n  🚀 Admin API running at http://localhost:${PORT}`);
-  console.log(`  📁 Admin Panel: http://localhost:5173/admin\n`);
+  console.log(`\n  🚀 Server running at http://localhost:${PORT}`);
 });
